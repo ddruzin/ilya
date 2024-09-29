@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Светлая тема */
+.light-theme {
+    background-color: #f0f0f0; /* Светлый фон */
+    color: #333; /* Темный текст */
+    background-image: url('https://images.unsplash.com/photo-1593642634371-8b12e02d091c');
+}
+
+/* Тёмная тема */
+.dark-theme {
+    background-color: #1e1e1e; /* Темный фон */
+    color: black; /* Черный текст */
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+}
+
+/* Кнопка переключения темы */
+.theme-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #ffaa00;
+}
+
+/* Навигация */
+nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
